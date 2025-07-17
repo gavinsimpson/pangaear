@@ -124,7 +124,7 @@ parse_res <- function(x) {
     citation = citation,
     supplement_to = supp
   )
-  lis[vapply(lis, length, 1) == 0] <- NA
+  lis[vapply(lis, length, 1) == 0] <- NA_character_ # NA is logical
   lis
 }
 
